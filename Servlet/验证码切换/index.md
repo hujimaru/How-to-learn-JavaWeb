@@ -26,7 +26,7 @@
 
 ### 3.四步骤解析逐步实现验证码功能
 
- - #### 第一步 实现出一张验证码的图片
+ - #### 第一步 生成一张验证码的图片
 
  - #### 第二步 验证码图片改为灰色背景  
 
@@ -34,4 +34,7 @@
 
  - #### 第四步 验证码图片随机生成字母
 
-
+ - 3.1 生成一张验证码图片
+ - BufferedImage image = new BufferedImage(宽，高，图片类型); //生成验证码图片，BufferedImage是什么？
+ - ImageIO
+ - 根据右方链接了解ImageIO https://blog.csdn.net/weixin_36279318/article/details/77446605
