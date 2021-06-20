@@ -34,14 +34,14 @@
 
  - #### 第四步 验证码图片随机生成字母
 
- - 3.1 生成一张验证码图片
+#### 3.1 生成一张验证码图片
  - BufferedImage image = new BufferedImage(宽，高，图片类型); //生成验证码图片，BufferedImage是什么？
  
  - // 根据ImageIO的write方法去获得一个OutPutStream输出流，
  - 根据右方链接了解ImageIO https://blog.csdn.net/weixin_36279318/article/details/77446605
  - ImageIo.write(image, "jpg", request.getOutputStream());
 
- - 3.2 处理验证码图片为灰色
+#### 3.2 处理验证码图片为灰色
  - // 获得验证码图片的绘图对象
  - Graphics graphics = image.getGraphics();
  - graphics.setColor(Color.gray);
