@@ -53,7 +53,8 @@
 #### 3.3 在验证码图片上绘制字母
  
  - // 通过Graphics的drawString方法，在图片上绘制四个字符 https://www.apiref.com/java11-zh/java.desktop/java/awt/Graphics2D.html#drawString(java.text.AttributedCharacterIterator,float,float)
+ - graphics.setColor(Color.gray);
  - for(int i=0;i<5;i++){
- - graphics.drawString("A",(width/4)*(i+1)，15）
+ - graphics.drawString("A",width/4*(i+1)，15);
  -}
 #### 3.4 验证码图片随机生成字母
