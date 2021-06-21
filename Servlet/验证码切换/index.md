@@ -58,3 +58,7 @@
  - graphics.drawString("A",width/4*(i+1)，15);
  -}
 #### 3.4 验证码图片随机生成字母
+
+- 随机生成 即 Random这个类相关
+- 肯定要将drawString中的参数“A”替换掉。
+- Random random = new  Random();
