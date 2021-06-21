@@ -57,12 +57,18 @@
  - for(int i=0;i<5;i++){
  - graphics.drawString("A",width/4*(i+1)，15);
  -}
+ 
 #### 3.4 验证码图片随机生成字母
 
-- 随机生成 即 Random这个类相关
-- 肯定要将drawString中的参数“A”替换掉。
+- // 生成字符串的数据集
+- String data = "abcdefghigklmnopqrstuvwxvz0123456789";
+
+- // 随机生成字符串 即 Random这个类相关
+- // 肯定要将drawString中的参数“A”替换掉。
 - Random random = new  Random();
 
-- 生成字符串的数据集
-- String str = "abcdefghigklmnopqrstuvwxvz0123456789";
-- 只要取得了
+- // 只要取得了字符串的位置，就可以取得随机的字符串
+- int　position = random.nextInt(data.length)
+- // 将随机的位置分割出来，通过subString方法
+- String str = data.subString(position,position+1) 
+- 
