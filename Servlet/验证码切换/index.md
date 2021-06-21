@@ -68,7 +68,16 @@
 - Random random = new  Random();
 
 - // 只要取得了字符串的位置，就可以取得随机的字符串
-- int　position = random.nextInt(data.length)
+- int position = random.nextInt(data.length)
 - // 将随机的位置分割出来，通过subString方法
 - String str = data.subString(position,position+1) 
-- 
+- d
+- d
+- d
+- d
+##### 涉及两个常用的知识点，Random随机生成字符串和subString方法切割
+
+
+
+
+
