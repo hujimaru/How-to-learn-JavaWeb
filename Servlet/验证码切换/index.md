@@ -72,8 +72,7 @@
 - // 将随机的位置分割出来，通过subString方法
 - String randomStr = data.subString(position,position+1) 
 - graphics.drawString(randomStr,width/4*(i+1)，15);
-- 
-- 
+
 ##### 涉及两个常用的知识点，Random随机生成字符串和subString方法切割
 ![image](https://user-images.githubusercontent.com/86137350/122731686-80b29480-d2b6-11eb-9e71-935abf1a1099.png)
 
