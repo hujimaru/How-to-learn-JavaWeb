@@ -62,3 +62,7 @@
 - 随机生成 即 Random这个类相关
 - 肯定要将drawString中的参数“A”替换掉。
 - Random random = new  Random();
+
+- 生成字符串的数据集
+- String str = "abcdefghigklmnopqrstuvwxvz0123456789";
+- 只要取得了
