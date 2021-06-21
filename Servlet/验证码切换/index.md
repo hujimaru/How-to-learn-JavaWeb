@@ -76,7 +76,7 @@
 - d
 - d
 ##### 涉及两个常用的知识点，Random随机生成字符串和subString方法切割
-
+![image](https://user-images.githubusercontent.com/86137350/122731686-80b29480-d2b6-11eb-9e71-935abf1a1099.png)
 
 
 
