@@ -23,14 +23,14 @@
 - }
 ##### 4.当登录错误时如何转发到错误的界面  
 #### 背景介绍
-- **请求转发的相关方法：**
-- RequestDispatcher对象，可以通过request.getRequestDispatcher()方法获取调用这个对象的foward方法就可以实现请求转发  
-- **转发过程中携带数据：**  
-- requ本身也是一个域对象，request可以携带数据传递给其他Web资源
-- setAttribute方法；
-- getAttribute方法；
-- removeAttribute方法；
-- getAttributeNames方法；
+**请求转发的相关方法：**
+RequestDispatcher对象，可以通过request.getRequestDispatcher()方法获取调用这个对象的foward方法就可以实现请求转发  
+**转发过程中携带数据：**  
+requ本身也是一个域对象，request可以携带数据传递给其他Web资源
+setAttribute方法；
+getAttribute方法；
+removeAttribute方法；
+getAttributeNames方法；
 - 1
 - 1
 - 1
