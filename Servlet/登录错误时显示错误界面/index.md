@@ -31,7 +31,15 @@
 - getAttribute方法；
 - removeAttribute方法；
 - getAttributeNames方法；
-- 1
+
+**具体实现如下**
+- if(userName.equal(name)){
+- // 用户账户不存在
+- // 通过该方法获得请求转发
+- request.getRequestDispatcher();
+- }else if(userPassword.equal(password)) {
+- // 用户密码错误
+-
 - 1
 - 1
 - 1
