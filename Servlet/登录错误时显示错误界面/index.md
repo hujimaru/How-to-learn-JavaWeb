@@ -36,10 +36,10 @@
 - if(userName.equal(name)){
 - // 用户账户不存在
 - // 通过该方法获得请求转发,getRequestDispatcher内传入请求转发的页面，注意要加”/“;
-- request.getRequestDispatcher("/loginError.html").forward(request,response)
+- request.getRequestDispatcher("/loginError.html").forward(request,response);
 - }else if(userPassword.equal(password)) {
 - // 用户密码错误
--
+- request.getRequestDispatcher("/loginError.html").forward(request,response);
 - 1
 - 1
 - 1
