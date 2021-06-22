@@ -7,20 +7,20 @@
  - LoginServlet.java
  
 ### LoginServlet.java
-###### 定义正确的账户和密码
+###### 1.定义正确的账户和密码
 - String name = "andy"
 - String password = "1234"
-###### 获取登录界面用户所登录的账户和密码
+###### 2.获取登录界面用户所登录的账户和密码
 - String userName = request.getParameter("name");
 - String userPassword = request.getParameter("password");
 
-###### 获取登录界面用户所输入的账户密码后，对其进行判断，二者进行判断
+###### 3.获取登录界面用户所输入的账户密码后，对其进行判断，二者进行判断
 - if(userName.equal(name)){
 - // 用户账户不存在
 - }else if(userPassword.equal(password)) {
 - // 用户密码错误
 - }
-- 1
+##### 4.当登录错误时如何转发到错误的界面
 - 1
 - 1
 - 1
