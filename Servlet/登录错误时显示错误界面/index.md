@@ -3,9 +3,10 @@
 
 ###### 关于介绍登录错误时显示错误界面的编程步骤
 
-###### 包含两个文件
- - Login.html
+###### 包含三个文件
+ - login.html
  - LoginServlet.java
+ - loginError.jsp
  
 ### LoginServlet.java
 ###### 1.定义正确的账户和密码
