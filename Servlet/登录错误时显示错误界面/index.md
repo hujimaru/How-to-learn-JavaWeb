@@ -35,8 +35,8 @@
 **具体实现如下**
 - if(userName.equal(name)){
 - // 用户账户不存在
-- // 通过该方法获得请求转发
-- request.getRequestDispatcher();
+- // 通过该方法获得请求转发,getRequestDispatcher内传入请求转发的页面，注意要加”/“;
+- request.getRequestDispatcher("/loginError.html").forward(request,response)
 - }else if(userPassword.equal(password)) {
 - // 用户密码错误
 -
