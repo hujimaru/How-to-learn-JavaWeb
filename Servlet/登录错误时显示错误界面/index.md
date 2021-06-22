@@ -39,11 +39,11 @@
 - // 通过该方法获得请求转发,getRequestDispatcher内传入请求转发的页面，注意要加”/“;
 - request.getRequestDispatcher("/loginError.jsp").forward(request,response);
 - // 通过setAttribute方法来设定用户错误
-- request.setAttribute("用户账户不存在");
+- request.setAttribute("errorMessage", "用户账户不存在");
 - }else if(userPassword.equal(password)) {
 - // 用户密码错误
 - request.getRequestDispatcher("/loginError.jsp").forward(request,response);
-- request.setAttribute("用户密码错误");
+- request.setAttribute("errorMessage", "用户密码错误");
 - }
 ### loginError.jsp
 - 上述设置了错误内容，需要再JSP页面传递出来
