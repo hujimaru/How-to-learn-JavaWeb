@@ -38,13 +38,21 @@
 - // 用户账户不存在
 - // 通过该方法获得请求转发,getRequestDispatcher内传入请求转发的页面，注意要加”/“;
 - request.getRequestDispatcher("/loginError.jsp").forward(request,response);
+- // 通过setAttribute方法来设定用户错误
+- request.setAttribute("用户账户不存在");
 - }else if(userPassword.equal(password)) {
 - // 用户密码错误
 - request.getRequestDispatcher("/loginError.jsp").forward(request,response);
-- 1
-- 1
-- 1
-- 1  
+- request.setAttribute("用户密码错误");
+- }
+### loginError.jsp
+- 上述设置了错误内容，需要再JSP页面传递出来
+- request.getAttribute();
+### 总结：整个程序流程
+- 1 设定用户密码以及获取用户输入账户和密码
+- 2 通过RequstDispatcher对象的forward方法请求转发到错误页面
+- 3 通过request.setAttribute方法携带数据传递给页面  
+- 4 
 ##### **注意 思考感悟**
 - 1.纯记事本编程是否对提高编程能力有所帮助
 - 2.怎样制定科学有效的学习工作健身指南
