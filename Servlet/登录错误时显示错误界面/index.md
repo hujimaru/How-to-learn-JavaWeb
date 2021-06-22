@@ -47,7 +47,7 @@
 - }
 ### loginError.jsp
 - 上述设置了错误内容，需要再JSP页面传递出来
-- request.getAttribute();
+- request.getAttribute("errorMessage");
 ### 总结：整个程序流程
 - 1 设定用户密码以及获取用户输入账户和密码
 - 2 通过RequstDispatcher对象的forward方法请求转发到错误页面
