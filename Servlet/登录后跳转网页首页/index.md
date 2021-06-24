@@ -37,3 +37,12 @@
 
             response.sendRedirect("/hello/home.html");
         }
+# 关于请求重定向和请求转发的区别  
+
+<img width="802" alt="截屏2021-06-24 15 56 02" src="https://user-images.githubusercontent.com/86137350/123217114-32470500-d505-11eb-802a-426ca3dfda39.png">
+
+
+
+
+
+
