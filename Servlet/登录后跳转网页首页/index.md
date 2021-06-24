@@ -13,3 +13,27 @@
 **具体参考下发图片，关于请求重定向内容**  
 
 <img width="942" alt="截屏2021-06-24 12 51 54" src="https://user-images.githubusercontent.com/86137350/123200101-10d91f80-d4eb-11eb-8308-8a5c5f3c2f9d.png">
+
+**需要注意的是在请求转发中请求重定向的地址需要加上项目名称　→　「/hello/home.html」
+
+        String userName = "xiaoming";
+        String userPass = "123456";
+
+        String name = request.getParameter("name");
+        String passWord = request.getParameter("passWord");
+
+        if (!name.equals(userName)) {
+            //账户不存在
+            request.setAttribute("errorMessage", "账户不存在");
+            request.getRequestDispatcher("/loginError.jsp").forward(request, response);
+        } else if (!passWord.equals(userPass)) {
+            //密码错误
+
+            request.setAttribute("errorMessage", "密码错误");
+            request.getRequestDispatcher("/loginError.jsp").forward(request, response);
+        } else {
+//                  response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
+//                  response.setHeader("Location","https://www.baidu.com/");
+
+            response.sendRedirect("/hello/home.html");
+        }
