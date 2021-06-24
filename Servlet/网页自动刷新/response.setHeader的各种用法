@@ -1,0 +1,60 @@
+1、一秒刷新页面一次 response.setHeader("refresh","1");
+
+2、二秒跳到其他页面 response.setHeader("refresh","2;URL=otherPagename");
+
+3、没有缓存：
+response.setHeader("Pragma", "No-cache");
+response.setHeader("Cache-Control", "no-cache");
+
+4、设置过期的时间期限  
+
+response.setDateHeader("Expires", System.currentTimeMillis()+自己设置的时间期限);
+
+5、访问别的页面：response.setStatus（302）; response.setHeader("location","url");
+
+6、下载文件
+
+Content-Type的作用：该实体头的作用是让服务器告诉浏览器它发送的数据属于什么文件类型。
+
+例如：当Content-Type 的值设置为text/html和text/plain时,前者会让浏览器把接收到的实体内容以HTML格式解析,后者会让浏览器以普通文本解析.
+
+Content-Disposition 的作用：当Content-Type 的类型为要下载的类型时 , 这个信息头会告诉浏览器这个文件的名字和类型
+
+response.setHeader("Content-Type","video/x-msvideo");
+
+response.setHeader( "Content-Disposition", "attachment;filename=" + new String( “文件名称”.getBytes("gb2312"), "ISO8859-1" ) );
+
+
+7、通知浏览器数据采用的压缩格式：response.setHeader("Content-Encoding","压缩后的数据"); 
+高速浏览器压缩数据的长度：response.setHeader("Content-Length",压缩后的数据.length+"");
+
+
+8、高速浏览器图片或视频：response.setHeader("Content-type","这个参数在tomcat里conf下的web.xml里面找");
+
+inputstream in= this.getServletContext.getResourceAsStream("/2.jpg");
+int len=0;
+byte buffer[]= new byte[1024]
+
+outputStream out = response.getOutputStream();
+
+while(len=in.read(buffer)>0){
+  out.write(buffer,0,len)
+}
+
+
+9、高速浏览器已下载的形式：
+
+response.setHeader("Content-disposition","attachment;filename=2.jpg");
+
+inputstream in= this.getServletContext.getResourceAsStream("/2.jpg");
+int len=0;
+byte buffer[]= new byte[1024]
+
+outputStream out = response.getOutputStream();
+
+while(len=in.read(buffer)>0){
+  out.write(buffer,0,len)
+}
+————————————————
+版权声明：本文为CSDN博主「跟派大星学编程」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/junmoxi/article/details/76976692
