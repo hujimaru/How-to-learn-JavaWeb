@@ -32,8 +32,8 @@
             request.setAttribute("errorMessage", "密码错误");
             request.getRequestDispatcher("/loginError.jsp").forward(request, response);
         } else {
-//                  response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
-//                  response.setHeader("Location","https://www.baidu.com/");
+            // response.setStatus(HttpServletResponse.SC_MOVED_TEMPORARILY);
+            // response.setHeader("Location","https://www.baidu.com/");
 
             response.sendRedirect("/hello/home.html");
         }
