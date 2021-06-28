@@ -7,6 +7,6 @@
 
 1 response对象有两个输出的方式 
  - 1.getWrite（）//字节码文件
- - 2.getOutPutStream（）//二进制文件
+ - 2.getOutPutStream（）//二进制文件c
  
 2 既然要输出给浏览器，就要拿到一个输入流将文件拿过来
