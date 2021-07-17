@@ -10,6 +10,6 @@ response.add(cookie);
 
 # 单单上述还不能够有以下两个功能
  ### 3.持久显示，关闭浏览器也可以显示。
- cookie.setAgeMax();
+ cookie.setAgeMax(60*10);
  ### 4.设定仅在某处显示。
- cookie.setPath();
+ cookie.setPath("/hello/setCookie");
