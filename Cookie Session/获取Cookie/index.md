@@ -10,9 +10,12 @@
 
 // 拿到cookie对象  
 for(Cookie[] cookie: cookies){  
-  
+ 
+// 拿到cookie名称
+String name = cookie.getName();  
+ 
 // 如果拿到的cookie名称等于设定的名称，执行下一步  
-if(cookie.equal("goods")){  
+if(name.equal("goods")){  
      
    // 获取cookie的value  
   String cookieValue = cookie.getValue();  
