@@ -8,18 +8,18 @@
 ###### 因为可能是多个Cookie，因此通过数组来接受。  
 ###### Cookie cookie[] = request.getCookie();  
 
-// 拿到cookie对象
-for(Cookie[] cookie: cookies){
-
-// 如果拿到的cookie名称等于设定的名称，执行下一步
-if(cookie.equal("goods")){
-   
-   // 获取cookie的value
-  String cookieValue = cookie.getValue();
-   
-   // 将该value显示在网页上面
-  response.getWriter().write("userName:"+cookValue);
+// 拿到cookie对象  
+for(Cookie[] cookie: cookies){  
   
- }
-
-}
+// 如果拿到的cookie名称等于设定的名称，执行下一步  
+if(cookie.equal("goods")){  
+     
+   // 获取cookie的value  
+  String cookieValue = cookie.getValue();  
+     
+   // 将该value显示在网页上面  
+  response.getWriter().write("userName:"+cookValue);  
+    
+ }  
+  
+}  
