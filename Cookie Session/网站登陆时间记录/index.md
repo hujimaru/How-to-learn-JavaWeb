@@ -5,13 +5,14 @@
 #### 3 将时间反映到页面上
 
 
-这里最重要的就是SimpleDateFormat,这里怎么去认识
+这里最重要的就是SimpleDateFormat,如何将时间转化为自定义的时间格式
 
 Date date = new Date();
 SimpleDateFormat simpleDateFormat =  new SimpleDateFormat("yyyymmdd-hh:mm:ss");
 simpleDateFormat.format(date);
 
-
+##### 细节注意
+###### 初次访问时，由于上次没有访问过网站，因此是Null，这里需要一个处理。
 
 
 ## 具体参考如下
