@@ -11,11 +11,11 @@ Date date = new Date();
 SimpleDateFormat simpleDateFormat =  new SimpleDateFormat("yyyymmdd-hh:mm:ss");
 simpleDateFormat.format(date);
 
-##### 细节注意
-###### 初次访问时，由于上次没有访问过网站，因此是Null，这里需要一个处理。
+### 细节注意
+#### 初次访问时，由于上次没有访问过网站，因此是Null，这里需要一个处理。
 
 
-## 具体参考如下
+## 关于SimpleDateFormat具体参考如下
 
 public class SimpleDateFormat extends DateFormat
 SimpleDateFormat 是一个以国别敏感的方式格式化和分析数据的具体类。 它允许格式化 (date -> text)、语法分析 (text -> date)和标准化。
