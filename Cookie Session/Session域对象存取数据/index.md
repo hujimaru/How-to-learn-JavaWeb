@@ -12,5 +12,5 @@ HttpSession session = request.getSession();
 String goodsValue = (String)session.getAttribute("goods");  
 response.getWrite().write("goods:"+goods);  
 
-
-// 上述强转还是不会
+（String）
+// 上述强转还是不会，代码写的多了，自然就会有感觉了。
