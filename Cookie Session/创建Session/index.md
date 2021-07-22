@@ -5,12 +5,19 @@
 #### 当客户要进入另一个界面购物车页面，服务器会通过SessionID来识别
 
 
+
 #### 如何获取Session对象
 //获取Session对象，通过request请求
 HttpSession session = request.getSession（）
+
+上述方法会获得专属于当前会话的session对象，如果服务器端没有该会话的Session对象
+会创建一个新的Session返回，如果已经有了属于该会话的session直接将已有的session返回
+实质就是根据JESSIONID判断该客户是否在服务器上已经存在session了
 
 //获取SessionID
 String sessionId = session.getSessionId();
 
 // 打印sessionId
-reponse.getWriter().writer(sessionId);
+reponse.getWriter().writer(sessionId);  
+
+
