@@ -7,3 +7,11 @@
 
 方法二  
 直接右键点击创建不需要配置xml文件
+
+
+*  
+contextInitialized(ServletContextEvent sce)  
+
+contextDestroed(ServletContextEvent sce)  
+
+
