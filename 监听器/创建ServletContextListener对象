@@ -7,11 +7,11 @@
 
 方法二  
 直接右键点击创建不需要配置xml文件
-
+@因为有WebListener() 不需要注解
 
 *  
 contextInitialized(ServletContextEvent sce)  
-
+System.out.println(“初始化方法执行”);
 contextDestroed(ServletContextEvent sce)  
-
+System.out.println("销毁方法执行");
 
