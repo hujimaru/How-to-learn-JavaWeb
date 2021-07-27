@@ -1,0 +1,12 @@
+# 域对象的通用的方法：  
+  
+setAttribute（name,value）  
+ - 触发添加属性的监听器的方法  
+ - 触发修改属性的监听器的方法  
+ 
+ getAttribute（name）  
+ - 查询操作不会触发监听器   
+ 
+ removeAttribute（name）  
+ - 触发删除属性的监听器的方法
+ 
