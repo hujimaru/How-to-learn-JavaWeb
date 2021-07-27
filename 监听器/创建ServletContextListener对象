@@ -1,4 +1,9 @@
 1 创建Module  
 2 创建FirstServletContextListener.java  
 // 继承ServletContextListener 监听器的接口
-3
+3 Web.xml配置  
+<>  
+
+
+方法二  
+直接右键点击创建不需要配置xml文件
